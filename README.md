@@ -27,3 +27,19 @@ about it at the start of each recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+## Response
+I have an immediate answer for an invariant for the end of the recursive call, but the beginning is more difficult.
+
+At the end of the recursive call, just before the code returns the array, you could put an invariant saying "At this point the array contains every member of the Fibonnaci Sequence up to value n", but as that is the purpose of the function, that invariant doesn't seem useful to showing the correctness of the algorithm.
+
+If I were to put an invariant at the beginning of the function, I might choose "The array containing every member of the Fibonnaci Sequence up to value n-1 can be found through recursion." With the way I have set up my code for this, this is almost always true. Since I don't have the negative part of the Fibonnaci Sequence set up, for n=0 specifically, this wouldn't be true, as n=-1 has no meaning in my implementation. I will probably come back to this and add the negative part in here shortly. For now though, this holds true for the relevant part of the algorithm, which is all positive numbers. This is useful as it means you can construct the entire Fibonnaci Series up to an arbitrarily high number using this code.
+
+## Questions
+
+I think I'm going to include this section for the conceptual exercises like this one where I modify the readme file. Let me know if this works well for you.
+
+1. Is it alright to use an invariant in that way, or should I add a phrase like "For all positive whole numbers, ..."?
+
+2. I noticed in this case that the invariant I am looking at is essentially the inductive step of the logic behind the recursion. Is it fair to assume this will hold true for a lot of loop-based or recursion-based algorithms?
+
