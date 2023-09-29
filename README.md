@@ -43,3 +43,11 @@ I think I'm going to include this section for the conceptual exercises like this
 
 2. I noticed in this case that the invariant I am looking at is essentially the inductive step of the logic behind the recursion. Is it fair to assume this will hold true for a lot of loop-based or recursion-based algorithms?
 
+# Extra Exploration
+Doing some extra work on this exercise mainly so I can learn a bit about the JSVerify testing setup. Thanks for the input on the original problem, it was quite helpful.
+
+Questions:
+1. Is there a way to generate arbitrary negative or positive integers with the tests? I assume that nat means natural numbers, so I tried using "whole", but that didn't seem to work.
+
+2. How does the function argument for jsc.forall() work? Is that basically just creating a conditional and checking if that holds true for an arbitrary value?
+
