@@ -27,3 +27,11 @@ about it at the start of each recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+## Response
+A good invariant for the positive part of my implementation of `fib()` I can place at the beginning of the function. "At this point the array contains every member of the Fibonnaci Sequence up to value n-1."
+
+At the end of the recursive call, just before the code returns the array, you could put an invariant saying "At this point the array contains every member of the Fibonnaci Sequence up to value n".
+
+# Extra Exploration
+Doing some extra work on this exercise mainly so I can learn a bit about the JSVerify testing setup. Thanks for the input on the original problem, it was quite helpful.
